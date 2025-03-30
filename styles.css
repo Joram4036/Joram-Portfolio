@@ -15,7 +15,7 @@
     --bg-color: #0d3032;
     --secon-bg-color: #292e33;
     --big-font: 2.5rem;
-    --norma-font: 2rem;
+    --normal-font: 2rem;
     --neon-box-shadow: 0 0 .5rem #12f7ff;
     --h2-font: 3rem;
 
@@ -84,7 +84,7 @@ span{
 }
 
 section{
-    padding: 100px 10%;
+    padding: 100px 9%;
 }
 
 .home{
@@ -110,7 +110,7 @@ section{
 .home-content p{
     color: #f5f5f5;
     line-height: 1.6;
-    margin: 1rem 0 1rem;
+    margin: 0.7rem 0 0;
 }
 
 .info-box{
@@ -118,7 +118,7 @@ section{
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    margin: 1rem 0 1rem;
+    margin: 0.7rem 0 1rem;
 }
 
 .info-box h5{
@@ -127,23 +127,50 @@ section{
     font-size: 1rem;
 }
 
+.home-image{
+    position: relative;
+}
+
+.img-box{
+    text-align: center;
+}
+
 .img-box img{
-    width: 400px;
-    height: 400px;
-  
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
-
-
-.change-text{
-    display: inline-flex;
-    margin: 0;
-    vertical-align: top;
+.img-box img:hover {
+    transform: scale(1.05);
 }
 
-.change-text h3 .word{
+.professions {
     display: flex;
-    position:sticky;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1rem 0 0.7rem;
+}
+
+.professions h3 {
+    white-space: nowrap;
+    color: var(--text-color);
+}
+
+.professions ul {
+    padding-left: 1.0rem;
+    margin: 0;
+    
+}
+
+.professions li {
+    margin-bottom: 0.5rem;
+    color: var(--hover-color);
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-size: 600;
+    list-style-type:disc;
 }
 
 .btn_box{
@@ -193,3 +220,137 @@ a.btn::before{
 a.btn:hover::before{
     width: 100%;
 }
+.social-icons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 40px;
+}
+.social-icons a{
+    display: inline-flex;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    transition: .6s;
+    box-shadow: 0 0 0.3rem #12f7ff;
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.social-icons a  i{
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover{
+    color: var(--bg-color);
+}
+
+.social-icons a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--hover-color);
+    transition: .6s;
+    z-index: -1;
+}
+.social-icons a:hover::before{
+    width: 100%;
+}
+
+/*about section css...................*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about .img-about{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    margin-right: 1rem;
+}
+.about .img-about img{
+    width: 400px;
+    max-width: 400px;
+    height:auto ;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about .img-about img:hover {
+    transform: scale(1.05);
+}
+
+.about-content span{
+    color: #12f7ff;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.about-content h2{
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+.about-content p{
+    color: #f5f5f5;
+    line-height: 1.6;
+    margin: 1rem 0 1rem;
+}
+.about-content h3{
+    color: var(--hover-color);
+    font-weight: 600;
+    font-size: 1,5rem;
+    margin: .2rem;
+}
+.info-about1,
+.info-about2,
+.info-about3{
+    background: var(--bg-color);
+    font-size: .7rem;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 7px;
+    box-shadow: var(--neon-box-shadow);
+    outline: 2px solid var(--bg-color);
+    z-index: 100;
+}
+
+.info-about1 span,
+.info-about2 span,
+.info-about3 span {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info-about1 p,
+.info-about2 p,
+.info-about3 p {
+    font-size: 0.65rem;
+    line-height: 1.2;
+}
+
+.about-content {
+    flex: 1;
+}
+
+
