@@ -82,6 +82,9 @@ header{
 span{
     color: var(--hover-color);
 }
+mark{
+    color: aquamarine;
+}
 
 section{
     padding: 100px 9%;
@@ -354,6 +357,61 @@ section{
 }
 
 
+/* Education section styling */
+.education-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-content h2{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 1rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.edu-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.edu-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.edu-text ul li{
+    list-style-type: disc;
+}
+
+.edu-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 .7rem;
+}
+
+.edu-image img {
+    width: 300px;
+    height: auto;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(18, 247, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.edu-image img:hover {
+    transform: scale(1.05);
+}
 
 /*CONTACT SECTION*/
 
