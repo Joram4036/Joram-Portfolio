@@ -180,7 +180,7 @@ section{
     height: 45px;
 }
 
-.btn-box a.btn{
+.btn-box .btn{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -200,12 +200,12 @@ section{
     z-index: 1;
 }
 
-a.btn:hover{
+.btn:hover{
     color: var(--hover-color);
 }
 
 
-a.btn::before{
+.btn::before{
     content: "";
     position: absolute;
     top:0;
@@ -217,7 +217,7 @@ a.btn::before{
     transition: .4s;
 }
 
-a.btn:hover::before{
+.btn:hover::before{
     width: 100%;
 }
 .social-icons{
@@ -354,3 +354,83 @@ a.btn:hover::before{
 }
 
 
+
+/*CONTACT SECTION*/
+
+.contact-content{
+    align-items: center;
+    text-align: center;
+}
+
+.contact{
+    background: var(--secon-bg-color);
+    width: 100%;
+}
+
+.contact form{
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    color: var(--text-color);
+    margin-bottom: .8rem;
+    background: #bfcecf;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+
+}
+
+.contact form textarea{
+    resize: vertical;
+    min-height: 150px;
+}
+
+.formBtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formBtn .btn{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+/*footer.....................*/
+footer {
+    padding: 1rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    color: var(--text-color);
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0d3032;
+    background: var(--hover-color);
+    padding: .4rem;
+    border-radius: 5px;
+    gap: 4px;
+}
+
+footer a i {
+    font-size: 2rem;
+}
+
+footer a h3 {
+    font-size: 13px;
+}
