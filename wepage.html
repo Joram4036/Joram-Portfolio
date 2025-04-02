@@ -16,7 +16,6 @@
     <body>
         <!-- header -->
         <header>
-            <div class="logo">Joram</div>
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -30,7 +29,7 @@
 
         <section id="home" class="home">
             <div class="home-content">
-                <h1>Hi! </h1>
+                <h1>Hi! Am Joram Maina. </h1>
                 <div class="professions">
                     <h3>I am a :</h3>
                     <ul>
@@ -52,14 +51,14 @@
                 </div>
 
                 <div class="btn-box">
-                    <a href="#" class="btn">Download CV</a>
+                    <a href="/CV .pdf" download="" class="btn">Download CV</a>
                     <a href="#contact" class="btn">Contact Me</a>
                 </div>
                 
                 <div class="social-icons">
                     <a href="https://www.facebook.com/Wvibesz"><i class="bx bxl-facebook"></i></a>
                     <a href="https://www.instagram.com/wvib_es?igsh=OWllOHlxNmh2cDAx"><i class="bx bxl-instagram"></i></a>
-                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/joram-maina-26808b33b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bx bxl-linkedin"></i></a>
                 </div>
             </div>  
         
@@ -169,10 +168,10 @@
                     <i class="bx bxs-layer service-icon"></i>
                     <h3>Personal Portfolio</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum iure cumque ab odit nam totam ea tempora temporibus soluta at explicabo quaerat consequatur est modi veritatis, earum voluptatum similique ut.
+                        Participated in the PLP 2025 hackathon where i craeted my personal proffessional portfolio. Awarded for a job well done. 
                     </p>
                     <div class="btn-box service-btn">
-                        <a href="#" class="btn">Portfolio</a>
+                        <a href="https://github.com/Joram4036/Joram-Portfolio.git" class="btn">Portfolio</a>
                     </div>
                 </div>
 
@@ -180,21 +179,22 @@
                     <i class="bx bx-desktop service-icon "></i>
                     <h3>Hackathon</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum iure cumque ab odit nam totam ea tempora temporibus soluta at explicabo quaerat consequatur est modi veritatis, earum voluptatum similique ut.
+                        Participated in the PLP 2025 hackathon where i craeted my personal proffessional portfolio. Awarded for a job well done.
+                    
                     </p>
                     <div class="btn-box service-btn">
-                        <a href="#" class="btn">Hackathon</a>
+                        <a href="https://github.com/Joram4036/Joram-Portfolio.git" class="btn">Hackathon</a>
                     </div>
                 </div>
 
                 <div class="projects-box">
                     <i class="bx bx-code-alt service-icon"></i>
-                    <h3>Kuivery</h3>
+                    <h3>CodeCave</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum iure cumque ab odit nam totam ea tempora temporibus soluta at explicabo quaerat consequatur est modi veritatis, earum voluptatum similique ut.
+                        CodeCave is a community of program developers. We share new Technologoes used and collaborate in Software Development.
                     </p>
                     <div class="btn-box service-btn">
-                        <a href="#" class="btn">Kuivery</a>
+                        <a href="https://whatsapp.com/channel/0029Vb5NjSM5K3zWWaMZsu3p" class="btn">CodeCave</a>
                     </div>
                 </div>
 
@@ -228,6 +228,32 @@
             </a>
         </footer>
 
+        <!-- Add this script before closing body tag -->
+        <script>
+            // Get all sections
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navlist a');
 
+            // Add scroll event listener
+            window.addEventListener('scroll', () => {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                // Remove active class from all links and add to current
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
