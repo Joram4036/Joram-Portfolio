@@ -659,3 +659,146 @@ footer a i {
 footer a h3 {
     font-size: 13px;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    section {
+        padding: 80px 5%;
+    }
+    
+    .home {
+        grid-gap: 2em;
+    }
+    
+    .img-box img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .home-content {
+        margin: 0 auto;
+    }
+    
+    .professions {
+        justify-content: center;
+    }
+    
+    .about {
+        flex-direction: column;
+    }
+    
+    .img-about {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .education-item {
+        flex-direction: column;
+    }
+    
+    .edu-image {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --big-font: 2rem;
+        --normal-font: 1.5rem;
+        --h2-font: 2.5rem;
+    }
+    
+    .navlist {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        transition: 0.3s;
+    }
+    
+    .navlist.active {
+        top: 0;
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+    
+    .section-projects {
+        flex-direction: column;
+    }
+    
+    .projects-box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .contact form {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --big-font: 1.8rem;
+        --normal-font: 1.3rem;
+        --h2-font: 2rem;
+    }
+    
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .btn-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        --big-font: 1.5rem;
+        --normal-font: 1.1rem;
+        --h2-font: 1.8rem;
+    }
+    
+    .img-box img {
+        max-width: 250px;
+    }
+    
+    .about .img-about img {
+        width: 300px;
+    }
+    
+    .edu-image img {
+        width: 250px;
+    }
+}
