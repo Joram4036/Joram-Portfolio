@@ -1,7 +1,9 @@
 # Joram Maina Portfolio Website
 
+
+Try my live demo on this link. https://jorammaina.netlify.app/
+
 A modern, responsive portfolio website showcasing my professional journey, skills, and projects. Built with HTML, CSS, and featuring a sleek design with neon accents.
-Try this live demo: https://jorammaina.netlify.app/
 
 ## Features
 
